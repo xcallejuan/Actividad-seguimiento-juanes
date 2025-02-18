@@ -17,4 +17,8 @@ class Note:
         if tag not in self.tags:
             self.tags.append(tag)
 
+    def __str__(self) -> str:
+        return (f"Date: {self.creation_date}"
+               f"{self.title}: {self.text}")
+
 
